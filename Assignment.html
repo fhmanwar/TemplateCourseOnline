@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="nav" role="navigation" id="myTopnav">
+		<div class="top-menu">
+			<div class="row">
+				<div class="col-25">
+					<div id="logo">
+						<a href="index.html"><img src="img/courseLogo.png" width="170" height="55"></a>
+					</div>
+				</div>
+				<div class="col-75">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="myCourse.html">My Course</a></li>
+						<li><a href="#" onclick="removeSession();">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="container">
+			<div class="center">
+				<h1>Assignment</h1>
+			</div>
+
+			<div class="assign">
+				<div class="conten light">
+					<div class="label">Question 1</div>
+					<textarea name="" id="" required></textarea>
+				</div>
+				<hr>
+				<div class="conten light">
+					<div class="label">Question 2</div>
+					<textarea name="" id="" required></textarea>
+				</div>
+				<hr>
+				<div class="conten light">
+					<div class="label">Question 3</div>
+					<textarea name="" id="" required></textarea>
+				</div>
+				<hr>
+
+				<div class="center">
+					<button class="btn submitBtn" onclick="assignment()"><div class="center">Submit</div></button>
+                </div>
+			</div>			
+		</div>
+	</div>
+	<!-- !container-fluid -->
+
+	<footer class="footer">
+		<p>
+			Copyright &copy;2020 All rights reserved
+		</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

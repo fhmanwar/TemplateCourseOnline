@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+		<nav class="nav" role="navigation" id="myTopnav">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-25">
+						<div id="logo">
+                            <a href="index.html"><img src="img/courseLogo.png" width="170" height="55"></a>
+						</div>
+					</div>
+					<div class="col-75">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="myCourse.html">My Course</a></li>
+                            <li><a href="#" onclick="removeSession();">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">			
+			<div class="mycourse">
+                <div class="center">
+                    <h2>My Course</h2>
+                </div>
+                <br><br>
+                <div style="overflow-x:auto;">
+                    <table class="mytbl">
+                        <thead>
+                            <tr>
+                                <th>Kode Mata Kuliah</th>
+                                <th>Nama Mata Kuliah</th>
+                                <th>Kode Dosen</th>
+                                <th>Dosen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>m1</td>
+                                <td><a href="courseDetail.html">Kalkulus</a></td>
+                                <td>d1</td>
+                                <td>Smith</td>
+                            </tr>
+                            <tr>
+                                <td>m2</td>
+                                <td><a href="courseDetail.html">Fisika</a></td>
+                                <td>d2</td>
+                                <td>Jackson</td>
+                            </tr>
+                            <tr>
+                                <td>m3</td>
+                                <td><a href="courseDetail.html">Database Management</a></td>
+                                <td>d3</td>
+                                <td>Johnson</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+			</div>
+		</div>
+        <!-- !container -->
+        
+	</div>
+	<!-- !container-fluid -->
+    
+    <footer class="footer">
+        <div class="center">
+            <div class="row">
+                <p>
+                    Copyright &copy;2020 All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+		<nav class="nav" role="navigation" id="myTopnav">
+			<div class="top-menu">
+				<div class="row">
+					<div class="col-25">
+						<div id="logo">
+                            <a href="index.html"><img src="img/courseLogo.png" width="170" height="55"></a>
+						</div>
+					</div>
+					<div class="col-75">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="myCourse.html">My Course</a></li>
+                            <li><a href="#" onclick="logout();">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="aside">
+                <div class="aside-title">
+                    <div class="center">
+                        <h2>Pesan Khusus</h2>
+                    </div>
+                </div>
+                <div class="mysection">
+                    <article class="myArticle">
+                        <h3>Web Application Development</h3>
+                        <p>(Your Name, date)</p>
+                        <p>This ist the story text. This ist the story text. </p>
+                        <p>This ist the story text. This ist the story text. </p>
+                    </article>
+    
+                    <article class="myArticle">
+                        <h3>Modern Web Browser</h3>
+                        <p>(Your Name, date)</p>
+                        <p>This ist the story text. This ist the story text. </p>
+                        <p>This ist the story text. This ist the story text. </p>
+                    </article>
+                </div>
+			</div>
+			
+			<main>
+				<section class="main-section">
+					<div class="mysection">
+						<h2>Pengumuman</h2>
+						<article class="myArticle">
+							<h3>Web Application Development</h3>
+							<p>1 Februari 2020</p>
+							<p>This ist the story text. This ist the story text. </p>
+							<p>This ist the story text. This ist the story text. </p>
+						</article>
+		
+						<article class="myArticle">
+							<h3>Modern Web Browser</h3>
+							<p>30 Januari 2020</p>
+							<p>This ist the story text. This ist the story text. </p>
+							<p>This ist the story text. This ist the story text. </p>
+						</article>
+					</div>
+				</section>
+			</main>
+		</div>
+        <!-- !container -->
+        
+	</div>
+	<!-- !container-fluid -->
+    
+    <footer class="footer">
+        <div class="center">
+            <div class="row">
+                <p>
+                    Copyright &copy;2020 All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            let session = sessionStorage.getItem('session');
+            console.log(session);
+            if(session === null ) {
+                window.location.href = "login.html";                
+            }
+        });
+    </script>
+</body>
+</html>

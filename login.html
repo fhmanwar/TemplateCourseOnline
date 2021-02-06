@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="nav" role="navigation" id="myTopnav">
+		<div class="top-menu">
+			<div class="row">
+				<div class="col-25">
+					<div id="logo">
+						<a href="index.html"> 
+							<img src="img/courseLogo.png" width="170" height="55">
+						</a>
+					</div>
+				</div>
+				<div class="col-75">
+					<ul>
+						<li class="active"><a href="login.html">Login</a></li>
+						<li><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<!-- <div class="banner-other"> </div> -->
+
+		<div class="container">
+			<div class="center">
+				<div class="row">
+					<h1>Login</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="login">
+					<div class="col-50">
+						<label>Email</label>
+						<input type="email" id="email" name="email" placeholder="Your Email.." required />
+					</div>
+					<div class="col-50">
+						<label>Password</label>
+						<input type="password" id="pass" name="pass" placeholder="Your Password.." required />
+					</div>
+					<div class="center">
+						<button class="btn" onclick="login()"><div class="center">Submit</div></button>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+
+		
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Email : admin@mail.com</p>
+            <p>Password : 12345678</p>
+        </div>
+    
+    </div>
+
+	</div>
+	<!-- !container-fluid -->
+
+	<footer class="footer">
+		<p>
+			Copyright &copy;2020 All rights reserved
+		</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "block";
+
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>

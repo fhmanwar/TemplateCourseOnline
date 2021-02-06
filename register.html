@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="nav" role="navigation" id="myTopnav">
+		<div class="top-menu">
+			<div class="row">
+				<div class="col-25">
+					<div id="logo">
+						<a href="index.html"> 
+							<img src="img/courseLogo.png" width="170" height="55">
+						</a>
+					</div>
+				</div>
+				<div class="col-75">
+					<ul>
+						<li><a href="login.html">Login</a></li>
+						<li class="active"><a href="register.html">Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+
+		<div class="container">
+			<div class="center">
+				<div class="row">
+					<h1>Register</h1>
+				</div>
+			</div>
+			<div class="container">
+				<div class="register">
+					<div class="row">
+						<div class="col-25">
+							<label>NIM</label>
+							<input type="text" id="nim" name="nim" placeholder="Your NIM.."  />
+						</div>
+						<div class="col-25">
+							<label>Name</label>
+							<input type="text" id="nama" name="nama" placeholder="Your name.."  />
+						</div>
+						<div class="col-25">
+							<label>E-mail</label>
+							<input type="email" id="email" name="email" placeholder="Your Email.."  />
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-50">
+							<label>Class</label>
+							<input type="text" id="class" name="class" placeholder="Your Class.."  />
+						</div>
+
+						<div class="col-50">
+							<label>Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="Your Phone Number.."  />
+						</div>					
+					</div>
+
+					<div class="row">
+						<div class="col-50">
+							<label>Password</label>
+							<input type="password" id="pass" name="pass" placeholder="Your Password.."  />
+						</div>
+						<div class="col-50">
+							<label>Confirm Password</label>
+							<input type="password" id="pass1" name="pass1" placeholder="Confirm Password.."  />
+						</div>
+					</div>
+					<div class="center">
+						<button class="btn" onclick="regis()"><div class="center">Submit</div></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- !container-fluid -->
+
+
+	<footer class="footer">
+		<p>
+			Copyright &copy;2020 All rights reserved
+		</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
